@@ -12,11 +12,14 @@ print(nums)
 result=[]
 # k is number step to rotate the array in forword direction
 k=int(input("enter the step value for rotation:"))
-for i in range(k):
-    a=nums[len(nums)-k+i]
-    result.insert(i,a)
-for i in range(len(nums)-k):
-    a=nums[i]
-    result.insert(k,a)
-print("After rotation")
-print(result)
+if k<=n:
+    for i in range(k):
+        a=nums[len(nums)-k+i]
+        result.insert(i,a)
+    for i in range(len(nums)-k):
+        a=nums[i]
+        result.insert(k,a)
+    print("After rotation")
+    print(result)
+else:
+    raise Exception("worng step vlaue.step should be less than or equalto value of",n)

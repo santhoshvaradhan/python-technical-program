@@ -22,4 +22,4 @@ if k<=n:
     print("After rotation")
     print(result)
 else:
-    raise Exception("worng step vlaue.step should be less than or equalto value of",n)
+  raise ValueError("worng step vlaue.step should be less than or equalto value of",n)

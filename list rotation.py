@@ -18,7 +18,7 @@ if k<=n:
         result.insert(i,a)
     for i in range(len(nums)-k):
         a=nums[i]
-        result.insert(k,a)
+        result.insert(k+i,a)
     print("After rotation")
     print(result)
 else:
